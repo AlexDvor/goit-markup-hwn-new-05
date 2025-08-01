@@ -612,6 +612,43 @@ img {
 	left: 16px;
 	transform: translateY(-50%);
 }
+.modal-form-agreement {
+	margin-bottom: 24px;
+}
+
+.modal-form-agreement-field {
+	color: #8e8f99;
+	font-size: 12px;
+	line-height: 14px;
+	letter-spacing: 0.48px;
+}
+.modal-form-agreement-checkbox {
+	display: inline-flex;
+	width: 16px;
+	height: 16px;
+	margin-right: 8px;
+	border-radius: 2px;
+	border: 1px solid rgba(46, 47, 66, 0.4);
+	justify-content: center;
+	align-items: center;
+}
+
+.checkbox:checked + .modal-form-agreement-field > .modal-form-agreement-checkbox {
+	background-color: var(--color-blue-600);
+	border-color: transparent;
+}
+
+.modal-form-agreement-icon {
+	fill: var(--color-white);
+}
+.modal-form-agreement-link {
+	font-size: 12px;
+	line-height: 1.33;
+	letter-spacing: 0.48px;
+	text-decoration-skip-ink: none;
+	text-decoration-line: underline;
+	color: #4d5ae5;
+}
 .modal-form-submit {
 	display: block;
 	margin: 0 auto;
