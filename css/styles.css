@@ -1,6 +1,7 @@
 :root {
 	/* 🎨 Base Colors */
 	--color-white: #ffffff;
+	--color-white-50: #fcfcfc;
 	--color-gray-50: #f4f4fd;
 	--color-gray-100: #e7e9fc;
 	--color-gray-400: #8e8f99;
@@ -32,6 +33,7 @@
 	--bg-hero-gradient: rgba(46, 47, 60, 0.7);
 	--bg-social-primary: var(--color-blue-600);
 	--bg-social-secondary: var(--color-green-500);
+	--bg-modal: var(--color-white-50);
 
 	/* 🪞 Borders & Shadows */
 	--border-color: var(--color-gray-100);
@@ -510,4 +512,107 @@ img {
 }
 .footer-logo-decoration {
 	color: var(--text-muted);
+}
+
+.backdrop {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(46, 47, 66, 0.4);
+}
+.modal {
+	position: relative;
+	top: 50%;
+	left: 50%;
+	max-width: 408px;
+	padding: 72px 24px 24px 24px;
+	border-radius: 4px;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
+		0 2px 1px 0 rgba(0, 0, 0, 0.2);
+	transform: translateX(-50%) translateY(-50%);
+	background-color: var(--bg-modal);
+}
+
+.modal-title {
+	font-weight: 500;
+	line-height: 24px;
+	letter-spacing: 0.32px;
+	margin-bottom: 16px;
+	text-align: center;
+}
+
+.modal-close-btn {
+	position: absolute;
+	top: 24px;
+	right: 24px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 24px;
+	height: 24px;
+	background-color: #e7e9fc;
+	border-radius: 50%;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.modal-form {
+}
+.modal-form-wrap {
+}
+
+.modal-form-wrap:not(:last-of-type) {
+	margin-bottom: 8px;
+}
+
+.modal-textarea-position {
+	margin-bottom: 16px;
+}
+
+.modal-form-label {
+	display: block;
+	font-size: 12px;
+	color: var(--color-gray-400);
+	line-height: 14px;
+	letter-spacing: 0.48px;
+	margin-bottom: 4px;
+}
+.modal-input-wrapper {
+	position: relative;
+}
+
+.modal-form-input {
+	display: block;
+	width: 100%;
+	height: 40px;
+	padding-left: 38px;
+	border-radius: 4px;
+	border: 1px solid rgba(46, 47, 66, 0.4);
+}
+
+.modal-form-textarea {
+	display: block;
+	height: 120px;
+	width: 100%;
+	padding: 8px 16px;
+	resize: none;
+	border-radius: 4px;
+	border: 1px solid rgba(46, 47, 66, 0.4);
+}
+
+.modal-form-textarea::placeholder {
+	font-size: 12px;
+	line-height: 14px;
+	letter-spacing: 0.48px;
+	color: rgba(46, 47, 66, 0.4);
+}
+.modal-form-icon {
+	position: absolute;
+	top: 50%;
+	left: 16px;
+	transform: translateY(-50%);
+}
+.modal-form-submit {
+	display: block;
+	margin: 0 auto;
 }
