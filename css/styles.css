@@ -527,6 +527,7 @@ img {
 }
 .footer-subscribe-form {
 	display: flex;
+	gap: 24px;
 }
 
 /* .footer-subscribe-label {
@@ -575,7 +576,6 @@ img {
 	align-items: center;
 	min-height: 40px;
 	min-width: 165px;
-	margin-left: 24px;
 }
 .footer-subscribe-icon {
 	margin-left: 16px;
