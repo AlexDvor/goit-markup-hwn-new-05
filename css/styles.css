@@ -633,14 +633,16 @@ img {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	padding: 0;
 	width: 24px;
 	height: 24px;
 	background-color: var(--color-gray-100);
 	border-radius: 50%;
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	outline: none;
+	cursor: pointer;
 	transition: var(--transition-base);
-	transition-property: background-color;
+	transition-property: background-color, border;
 }
 
 .modal-close-icon {
@@ -651,6 +653,7 @@ img {
 .modal-close-btn:hover,
 .modal-close-btn:focus {
 	background-color: var(--color-blue-600);
+	border: none;
 }
 
 .modal-close-btn:hover,
