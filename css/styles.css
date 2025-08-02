@@ -539,6 +539,10 @@ img {
 	margin-bottom: 16px;
 } */
 .footer-subscribe-field {
+	font-size: 12px;
+	line-height: 2;
+	letter-spacing: 0.04em;
+	padding-left: 16px;
 	width: 264px;
 	height: 40px;
 	outline: none;
