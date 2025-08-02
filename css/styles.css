@@ -614,6 +614,8 @@ img {
 		0 2px 1px 0 rgba(0, 0, 0, 0.2);
 	transform: translateX(-50%) translateY(-50%);
 	background-color: var(--bg-modal);
+	transition: var(--transition-base);
+	transition-property: transform;
 }
 
 .modal-title {
@@ -638,7 +640,7 @@ img {
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	outline: none;
 	transition: var(--transition-base);
-	transition-property: background-color, transform;
+	transition-property: background-color;
 }
 
 .modal-close-icon {
