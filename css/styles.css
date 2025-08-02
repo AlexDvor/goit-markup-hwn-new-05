@@ -568,6 +568,13 @@ img {
 	border-radius: 50%;
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	outline: none;
+	transition: var(--transition-base);
+	transition-property: background-color;
+}
+
+.modal-close-icon {
+	transition: var(--transition-base);
+	transition-property: fill;
 }
 
 .modal-close-btn:hover,
@@ -612,6 +619,8 @@ img {
 	padding-left: 38px;
 	border-radius: 4px;
 	border: 1px solid rgba(46, 47, 66, 0.4);
+	transition: var(--transition-base);
+	transition-property: border-color;
 }
 
 .modal-form-input:focus {
@@ -631,6 +640,8 @@ img {
 	border-radius: 4px;
 	outline: none;
 	border: 1px solid rgba(46, 47, 66, 0.4);
+	transition: var(--transition-base);
+	transition-property: border-color;
 }
 
 .modal-form-textarea:focus {
@@ -648,6 +659,8 @@ img {
 	top: 50%;
 	left: 16px;
 	transform: translateY(-50%);
+	transition: var(--transition-base);
+	transition-property: fill;
 }
 .modal-form-agreement {
 	margin-bottom: 24px;
@@ -669,6 +682,8 @@ img {
 	border: 1px solid rgba(46, 47, 66, 0.4);
 	justify-content: center;
 	align-items: center;
+	transition: var(--transition-base);
+	transition-property: background-color, border-color;
 }
 
 .checkbox:checked + .modal-form-agreement-field > .modal-form-agreement-checkbox {
@@ -678,6 +693,8 @@ img {
 
 .modal-form-agreement-icon {
 	fill: var(--color-white);
+	transition: var(--transition-base);
+	transition-property: fill;
 }
 .modal-form-agreement-link {
 	font-size: 12px;
