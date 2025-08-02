@@ -518,18 +518,18 @@ img {
 .footer-subscribe-thumb {
 	margin-left: auto;
 }
-/* .footer-subscribe-subtitle {
+.footer-subscribe-subtitle {
 	font-weight: 500;
 	line-height: 24px;
 	letter-spacing: 0.32px;
 	color: var(--text-inverse);
 	margin-bottom: 16px;
-} */
+}
 .footer-subscribe-form {
 	display: flex;
 }
 
-.footer-subscribe-label {
+/* .footer-subscribe-label {
 	display: flex;
 	flex-direction: column;
 	font-weight: 500;
@@ -537,7 +537,7 @@ img {
 	letter-spacing: 0.32px;
 	color: var(--text-inverse);
 	margin-bottom: 16px;
-}
+} */
 .footer-subscribe-field {
 	width: 264px;
 	height: 40px;
