@@ -712,7 +712,7 @@ img {
 	height: 120px;
 	width: 100%;
 	padding: 8px 16px;
-	color: var(--text-heading);
+	color: rgba(46, 47, 66, 0.4);
 	background-color: transparent;
 	border-radius: 4px;
 	outline: transparent;
@@ -771,6 +771,7 @@ img {
 .checkbox:checked + .modal-form-agreement-field > .modal-form-agreement-checkbox {
 	background-color: var(--color-blue-600);
 	border: none;
+	fill: var(--color-gray-50);
 }
 
 .modal-form-agreement-icon {
