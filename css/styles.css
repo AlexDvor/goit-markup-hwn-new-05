@@ -594,7 +594,7 @@ img {
 	visibility: hidden;
 	pointer-events: none;
 	transition: var(--transition-base);
-	transition-property: opacity;
+	transition-property: opacity, visibility;
 }
 
 .backdrop.is-open {
@@ -603,7 +603,7 @@ img {
 	pointer-events: initial;
 }
 .modal {
-	position: relative;
+	position: absolute;
 	top: 50%;
 	left: 50%;
 	max-width: 408px;
