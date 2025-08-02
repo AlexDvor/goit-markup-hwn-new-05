@@ -638,7 +638,7 @@ img {
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	outline: none;
 	transition: var(--transition-base);
-	transition-property: background-color;
+	transition-property: background-color, transform;
 }
 
 .modal-close-icon {
