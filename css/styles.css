@@ -515,6 +515,59 @@ img {
 	color: var(--text-muted);
 }
 
+.footer-subscribe-thumb {
+	margin-left: auto;
+}
+.footer-subscribe-subtitle {
+	font-weight: 500;
+	line-height: 24px;
+	letter-spacing: 0.32px;
+	color: var(--text-inverse);
+	margin-bottom: 16px;
+}
+.footer-subscribe-form {
+}
+.footer-subscribe-field {
+	width: 264px;
+	height: 40px;
+	outline: none;
+	color: var(--text-inverse);
+	border-radius: 4px;
+	border: 1px solid var(--WHITE, #fff);
+	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+	background-color: transparent;
+	transition: var(--transition-base);
+	transition-property: border-color;
+}
+
+.footer-subscribe-field:hover,
+.footer-subscribe-field:focus {
+	border-color: var(--color-blue-500);
+}
+
+.footer-subscribe-field::placeholder {
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 24px;
+	letter-spacing: 0.48px;
+	padding-left: 16px;
+	color: var(--text-inverse);
+}
+
+.footer-subscribe-btn {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 40px;
+	min-width: 165px;
+	margin-left: 24px;
+}
+.footer-subscribe-icon {
+	margin-left: 16px;
+}
+
+/* Modal */
+
 .backdrop {
 	position: fixed;
 	top: 0;
