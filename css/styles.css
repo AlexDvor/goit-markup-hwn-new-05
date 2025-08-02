@@ -712,9 +712,14 @@ img {
 	height: 120px;
 	width: 100%;
 	padding: 8px 16px;
-	resize: none;
+	color: var(--text-heading);
+	background-color: transparent;
 	border-radius: 4px;
-	outline: none;
+	outline: transparent;
+	font-size: 12px;
+	line-height: 1.17;
+	letter-spacing: 0.04em;
+	resize: none;
 	border: 1px solid rgba(46, 47, 66, 0.4);
 	transition: var(--transition-base);
 	transition-property: border-color;
@@ -745,7 +750,7 @@ img {
 .modal-form-agreement-field {
 	color: var(--color-gray-400);
 	font-size: 12px;
-	line-height: 14px;
+	line-height: 1.17;
 	letter-spacing: 0.48px;
 	cursor: pointer;
 }
@@ -758,13 +763,14 @@ img {
 	border: 1px solid rgba(46, 47, 66, 0.4);
 	justify-content: center;
 	align-items: center;
+	fill: transparent;
 	transition: var(--transition-base);
-	transition-property: background-color, border-color;
+	transition-property: background-color, border, fill;
 }
 
 .checkbox:checked + .modal-form-agreement-field > .modal-form-agreement-checkbox {
 	background-color: var(--color-blue-600);
-	border-color: transparent;
+	border: none;
 }
 
 .modal-form-agreement-icon {
