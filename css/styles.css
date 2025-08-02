@@ -209,7 +209,8 @@ img {
 	line-height: 1.5;
 	letter-spacing: 0.02em;
 	color: var(--text-heading);
-	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: var(--transition-base);
+	transition-property: color;
 }
 
 /* .header-nav-link::after {
@@ -521,6 +522,17 @@ img {
 	width: 100vw;
 	height: 100vh;
 	background-color: rgba(46, 47, 66, 0.4);
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
+	transition: var(--transition-base);
+	transition-property: opacity;
+}
+
+.backdrop.is-open {
+	opacity: 1;
+	visibility: visible;
+	pointer-events: initial;
 }
 .modal {
 	position: relative;
@@ -555,6 +567,7 @@ img {
 	background-color: #e7e9fc;
 	border-radius: 50%;
 	border: 1px solid rgba(0, 0, 0, 0.1);
+	outline: none;
 }
 
 .modal-close-btn:hover,
